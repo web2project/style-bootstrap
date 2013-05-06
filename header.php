@@ -39,6 +39,7 @@ require W2P_BASE_DIR . '/includes/ajax_functions.php';
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./style/<?php echo $uistyle; ?>/assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="./style/<?php echo $uistyle; ?>/assets/ico/apple-touch-icon-57-precomposed.png">
 
+        <link rel="stylesheet" type="text/css" href="./style/common.css" media="all" charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="./style/<?php echo $uistyle; ?>/main.css" media="all" charset="utf-8"/>
         <link rel="shortcut icon" href="./style/<?php echo $uistyle; ?>/favicon.ico" type="image/ico" />
         <?php
