@@ -24,23 +24,17 @@ class CTabBox extends w2p_Theme_TabBox {
 
         // tabbed view
 //echo '<pre>'; print_r($this->tabs); echo '</pre>';
-        $s .= '<ul class="nav nav-tabs">';
-            foreach ($this->tabs as $k => $v) {
-                
-            }
-        $s .= '</ul>';
+//TODO: check count before drawing anything
+
 
         $s .= '<table width="100%" border="0" cellpadding="0" cellspacing="0">';
-        $s .= '<tr><td><table align="' . $alignment . '" border="0" cellpadding="0" cellspacing="0"><tr>';
 
-        if (count($this->tabs) - 1 < $this->active) {
-            //Last selected tab is not available in this view. eg. Child tasks
-            $this->active = 0;
-        }
+        $s .= '<tr><td>';
+        $s .= '<ul class="nav nav-tabs" style="margin-bottom: 0">';
         foreach ($this->tabs as $k => $v) {
-            $class = ($k == $this->active) ? 'tabon' : 'taboff';
-            $sel = ($k == $this->active) ? 'Selected' : '';
-            $s .= '<td id="toptab_' . $k . '" valign="middle" nowrap="nowrap" class="' . $class . '">&nbsp;<a href="';
+            $class = ($k == $this->active) ? 'class="active"' : '';
+
+            $s .= '<li ' . $class . '><a href="';
             if ($this->javascript) {
                 $s .= 'javascript:' . $this->javascript . '(' . $this->active . ', ' . $k . ')';
             } elseif ($js_tabs) {
@@ -48,9 +42,13 @@ class CTabBox extends w2p_Theme_TabBox {
             } else {
                 $s .= $this->baseHRef . 'tab=' . $k;
             }
-            $s .= '">' . ($v[2] ? $v[1] : $AppUI->_($v[1])) . '</a>&nbsp;</td>';
+
+            $s .= '">';
+            $s .= '&nbsp;' . $AppUI->_($v[1]) . '&nbsp;';
+            $s .= '</li>';
         }
-        $s .= '</tr></table></td></tr>';
+        $s .= '</ul>';
+        $s .= '</td></tr>';
 
         $s .= '<tr><td width="100%" colspan="' . (count($this->tabs) * 4 + 1) . '" class="tabox">';
         echo $s;
