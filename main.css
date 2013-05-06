@@ -1,0 +1,74 @@
+/* $Id$ $URL$ */
+body {
+/*    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+
+.navbar-fixed-top {
+    position: fixed;
+}
+
+.navbar-fixed-top .container {
+    width: 100%;
+}
+
+.nav img[id="search-img"] {
+    margin: 10px 0 0 0;
+}
+
+.navbar .nav > li > a {
+    margin-right: -5px;
+}
+
+input[id="keyword"] {
+    height: 12px;
+    margin: 10px 0 0 0;
+    width:  120px;
+}
+select[name="m"] {
+    height: 24px;
+    margin: 9px 0 0 10px;
+    width: 100px;
+}
+
+#nav-sub {
+    float: right;
+    margin-top: 60px;
+}
+
+#nav-sub ul {
+    display: inline;
+}
+
+#nav-sub ul li {
+    display: inline;
+}
+
+#nav-sub a {
+    margin-right: 20px;
+}
+
+table {
+/*    border: solid 1px;*/
+}
+/* Standard table 'spreadsheet' style */
+table.tbl {
+    background: #aeaeae;
+    width: 100%;
+}
+
+table.tbl TH {
+    white-space: nowrap;
+    border-left-width: 0px;
+    border-right-width: 1px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    padding: 2px 2px 2px 2px;
+    text-align:center;
+    line-height:18px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+table.tbl td {
+    background-color: #ffffff;
+}
