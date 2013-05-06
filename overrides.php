@@ -79,7 +79,11 @@ class CTabBox extends w2p_Theme_TabBox {
 }
 
 function styleRenderBoxTop() {
-	return '';
+    $ret = '<table width="100%">';
+    $ret .= '<tr><td><ul class="nav nav-list"><li class="divider"></li></ul></td></tr>';
+    $ret .= '</table>';
+
+    return $ret;
 }
 
 function styleRenderBoxBottom() {
