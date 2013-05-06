@@ -20,17 +20,6 @@ class CTabBox extends w2p_Theme_TabBox {
 		$s = '';
 		// tabbed / flat view options
 		if ($AppUI->getPref('TABVIEW') == 0) {
-			if ($opt_flat) {
-				$s .= '<table border="0" cellpadding="2" cellspacing="0" width="100%">';
-				$s .= '<tr>';
-				$s .= '<td width="54" nowrap="nowrap">';
-				$s .= '<a class="button" href="' . $this->baseHRef . 'tab=0"><span>' . $AppUI->_('tabbed') . '</span></a>';
-				$s .= '</td>';
-				$s .= '<td nowrap="nowrap">';
-				$s .= '<a class="button" href="' . $this->baseHRef . 'tab=-1"><span>' . $AppUI->_('flat') . '</span></a>';
-				$s .= '</td>' . $extra . '</tr></table>';
-				echo $s;
-			}
 		} else {
 			if ($extra) {
 				echo '<table border="0" cellpadding="2" cellspacing="0" width="100%"><tr>' . $extra . '</tr>' . '</table>';
@@ -76,19 +65,6 @@ class CTabBox extends w2p_Theme_TabBox {
 			}
 			$s .= '</tr></table></td></tr>';
 
-			//round the right top of the tab box
-			$s .= '<tr><td>';
-			$s .= '<table width="100%" cellspacing="0" cellpadding="0" border="0">';
-			$s .= '<tbody>';
-			$s .= '<tr>';
-			$s .= '	<td valign="bottom" width="100%" background="./style/' . $uistyle . '/images/tabbox_top.jpg" align="left">';
-			$s .= '		<img src="./style/' . $uistyle . '/images/tabbox_top.jpg" alt=""/>';
-			$s .= '	</td>';
-			$s .= '</tr>';
-			$s .= '</tbody>';
-			$s .= '</table>';
-			$s .= '</td></tr>';
-
 			$s .= '<tr><td width="100%" colspan="' . (count($this->tabs) * 4 + 1) . '" class="tabox">';
 			echo $s;
 			//Will be null if the previous selection tab is not available in the new window eg. Children tasks
@@ -119,30 +95,7 @@ class CTabBox extends w2p_Theme_TabBox {
 }
 
 function styleRenderBoxTop() {
-	global $AppUI, $currentInfoTabId;
-	$uistyle = $AppUI->getPref('UISTYLE') ? $AppUI->getPref('UISTYLE') : w2PgetConfig('host_style');
-	if (!$uistyle) {
-		$uistyle = 'web2project';
-	}
-	if ($currentInfoTabId) {
-		return '';
-	}
-	$ret = '<table width="100%" cellspacing="0" cellpadding="0" border="0">';
-	$ret .= '<tbody>';
-	$ret .= '<tr>';
-	$ret .= '	<td valign="bottom" height="17" style="background:url(./style/' . $uistyle . '/images/box_left_corner.jpg);" align="left">';
-	$ret .= '		<img width="19" height="17" alt="" src="./style/' . $uistyle . '/images/box_left_corner.jpg"/>';
-	$ret .= '	</td>';
-	$ret .= '	<td valign="bottom" width="100%" style="background:url(./style/' . $uistyle . '/images/box_top.jpg);" align="left">';
-	$ret .= '		<img width="19" height="17" alt="" src="./style/' . $uistyle . '/images/box_top.jpg"/>';
-	$ret .= '	</td>';
-	$ret .= '	<td valign="bottom" style="background:url(./style/' . $uistyle . '/images/box_right_corner.jpg);" align="right">';
-	$ret .= '		<img width="19" height="17" alt="" src="./style/' . $uistyle . '/images/box_right_corner.jpg"/>';
-	$ret .= '	</td>';
-	$ret .= '</tr>';
-	$ret .= '</tbody>';
-	$ret .= '</table>';
-	return $ret;
+	return '';
 }
 
 function styleRenderBoxBottom() {
