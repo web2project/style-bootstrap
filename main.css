@@ -48,7 +48,7 @@ select[name="m"] {
 }
 
 table {
-/*    border: solid 1px;*/
+
 }
 /* Standard table 'spreadsheet' style */
 table.tbl {
@@ -71,4 +71,53 @@ table.tbl TH {
 
 table.tbl td {
     background-color: #ffffff;
+}
+
+div.std {
+    background: inherit;
+    height: 0px;
+}
+
+select, textarea, input[type="text"], input[type="password"],
+    input[type="datetime"], input[type="datetime-local"], input[type="date"],
+    input[type="month"], input[type="time"], input[type="week"],
+    input[type="number"], input[type="email"], input[type="url"],
+    input[type="search"], input[type="tel"], input[type="color"],
+    .uneditable-input {
+    font-size: 10px;
+    height: 15px;
+    width: 175px;
+}
+
+.crumb ul {
+    margin-left: 5px;
+    padding: 0px;
+}
+.crumb ul li {
+	margin: 2px 2px 2px;
+	font-family:arial,sans-serif;
+	color: #000000;
+	text-decoration: none;
+	display: inline; /* Remove this line arrange the buttons vertically */
+	background: transparent url('images/crumb_right.gif') no-repeat scroll top right;
+	float: left;
+	height: 22px;
+	padding-right: 10px; /* sliding doors padding */
+	border:0px;
+}
+.crumb ul li span, .crumb ul li div {
+    background: transparent url('images/crumb_left.gif') no-repeat;
+    display: block;
+    line-height: 14px;
+    padding: 2px 0 5px 10px;
+}
+.crumb ul li a {
+	display: inline;
+	color: #000000;
+}
+.crumb ul li a:active {
+	color: #AD0000;
+}
+.crumb ul li a:hover {
+	color: #FFFFFF;
 }
