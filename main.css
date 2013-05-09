@@ -19,6 +19,28 @@ body {
     margin-right: -5px;
 }
 
+.module-title .icon, .module-title h1 {
+    margin-left: 10px;
+    margin-top: -15px;
+}
+
+.module-nav {
+    margin-top: -10px;
+}
+
+.crumb-right li {
+    margin-right: 5px;
+}
+
+.alert {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding-left: 40px;
+    text-align: center;
+    width: 200px;
+}
+
 input[id="keyword"] {
     height: 12px;
     margin: 10px 0 0 0;

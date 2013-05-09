@@ -93,3 +93,31 @@ function styleRenderBoxBottom() {
 
     return $ret;
 }
+
+function messageHandler($reset = true) {
+    global $AppUI;
+    $msg = $AppUI->msg;
+
+    $class = 'alert ';
+    switch ($AppUI->msgNo) {
+        case UI_MSG_OK:
+        case UI_MSG_ALERT:
+            $class .= 'alert-success';
+            break;
+        case UI_MSG_WARNING:
+            $class .= 'alert-info';
+            break;
+        case UI_MSG_ERROR:
+            $class .= 'alert-error';
+            break;
+        default:
+            
+    }
+
+    if ($reset) {
+        $AppUI->msg = '';
+        $AppUI->msgNo = 0;
+    }
+
+    return $msg ? '<div class="' . $class . '"><button type="button" class="close" data-dismiss="alert">&times;</button>' . $msg . '</div>' : '';
+}

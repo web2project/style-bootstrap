@@ -74,28 +74,26 @@ require W2P_BASE_DIR . '/includes/ajax_functions.php';
         </div>
 
         <div id="nav-sub" class="btn-group">
-            <button class="btn btn-small" onclick="javascript:window.open('?m=help&amp;dialog=1&amp;hid=', 'contexthelp', 'width=800, height=600, left=50, top=50, scrollbars=yes, resizable=yes')"><?php echo $AppUI->_('Help'); ?></button>
-            <button class="btn btn-small"><a href="./index.php?m=admin&amp;a=viewuser&amp;user_id=<?php echo $AppUI->user_id; ?>"><?php echo $AppUI->_('My Info'); ?></button>
+            <a href="#" onclick="javascript:window.open('?m=help&amp;dialog=1&amp;hid=', 'contexthelp', 'width=800, height=600, left=50, top=50, scrollbars=yes, resizable=yes')"><button class="btn btn-small"><?php echo $AppUI->_('Help'); ?></button></a>
+            <a href="./index.php?m=admin&amp;a=viewuser&amp;user_id=<?php echo $AppUI->user_id; ?>"><button class="btn btn-small"><?php echo $AppUI->_('My Info'); ?></button></a>
             <?php if (canAccess('tasks')) { ?>
-                <button class="btn btn-small"><a href="./index.php?m=tasks&amp;a=todo"><?php echo $AppUI->_('My Tasks'); ?></a></button>
+                <a href="./index.php?m=tasks&amp;a=todo"><button class="btn btn-small"><?php echo $AppUI->_('My Tasks'); ?></button></a>
             <?php } ?>
             <?php if (canAccess('calendar')) {
                 $now = new w2p_Utilities_Date(); ?>
-                <button class="btn btn-small"><a class="button" href="./index.php?m=calendar&amp;a=day_view&amp;date=<?php echo $now->format(FMT_TIMESTAMP_DATE); ?>"><?php echo $AppUI->_('Today'); ?></a></button>
+                <a href="./index.php?m=calendar&amp;a=day_view&amp;date=<?php echo $now->format(FMT_TIMESTAMP_DATE); ?>"><button class="btn btn-small"><?php echo $AppUI->_('Today'); ?></button></a>
             <?php } ?>
-            <a href="./index.php?m=calendar&amp;a=day_view&amp;date=<?php echo $now->format(FMT_TIMESTAMP_DATE); ?>"><button class="btn btn-small"><?php echo $AppUI->_('Today'); ?></button></a>
-            <button class="btn btn-small"><a href="./index.php?logout=-1"><?php echo $AppUI->_('Logout'); ?></a></button>
+            <a href="./index.php?logout=-1"><button class="btn btn-small"><?php echo $AppUI->_('Logout'); ?></button></a>
         </div>
 
-<br /><br />
-
-    <div class="std shadow">&nbsp;</div>
+        <div class="std shadow">&nbsp;</div>
+        
+        <?php echo messageHandler($AppUI); ?>
 
         <table width="100%" cellspacing="0" cellpadding="4" border="0">
             <tr>
                 <td valign="top" align="left" width="98%">
                     <?php
-                        echo $AppUI->getMsg();
                         $AppUI->boxTopRendered = false;
                         if ($m == 'help' && function_exists('styleRenderBoxTop')) {
                             echo styleRenderBoxTop();
