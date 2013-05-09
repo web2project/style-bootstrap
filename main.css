@@ -80,10 +80,6 @@ table.tbl TH {
     list-style-position: inside;
 }
 
-table.tbl td {
-    background-color: #ffffff;
-}
-
 div.std {
     background: inherit;
     height: 0px;
@@ -137,15 +133,21 @@ input[name="search_string"] {
 	color: #FFFFFF;
 }
 
-
 .nav-tabs {
     margin-bottom: 0px;
 }
 
 .view th, .list th {
-    background: #CCC;
+    background: #bbb;
     font-weight: bold;
     text-align: left;
+}
+
+table.list tr {
+    background: #ddd;
+}
+table.list tr:nth-child(even) {
+    background-color: #eee;
 }
 
 /* month calendar - title area */
