@@ -30,7 +30,7 @@ class CTabBox extends w2p_Theme_TabBox {
         $s .= '<table width="100%" border="0" cellpadding="0" cellspacing="0">';
 
         $s .= '<tr><td>';
-        $s .= '<ul class="nav nav-tabs" style="margin-bottom: 0">';
+        $s .= '<ul class="nav nav-tabs">';
         foreach ($this->tabs as $k => $v) {
             $class = ($k == $this->active) ? 'class="active"' : '';
 

@@ -73,19 +73,18 @@ require W2P_BASE_DIR . '/includes/ajax_functions.php';
             </div>
         </div>
 
-        <div id="nav-sub">
-            <ul>
-                <li><a class="button" href="javascript: void(0);" onclick="javascript:window.open('?m=help&amp;dialog=1&amp;hid=', 'contexthelp', 'width=800, height=600, left=50, top=50, scrollbars=yes, resizable=yes')"><span><?php echo $AppUI->_('Help'); ?></span></a></li>
-                <li><a class="button" href="./index.php?m=admin&amp;a=viewuser&amp;user_id=<?php echo $AppUI->user_id; ?>"><span><?php echo $AppUI->_('My Info'); ?></span></a></li>
-                <?php if (canAccess('tasks')) { ?>
-                    <li><a class="button" href="./index.php?m=tasks&amp;a=todo"><span><b><?php echo $AppUI->_('My Tasks'); ?></b></span></a></li>
-                <?php } ?>
-                <?php if (canAccess('calendar')) {
-                    $now = new w2p_Utilities_Date(); ?>
-                    <li><a class="button" href="./index.php?m=calendar&amp;a=day_view&amp;date=<?php echo $now->format(FMT_TIMESTAMP_DATE); ?>"><span><?php echo $AppUI->_('Today'); ?></span></a></li>
-                <?php } ?>
-                <li><a class="button" href="./index.php?logout=-1"><span><?php echo $AppUI->_('Logout'); ?></span></a></li>
-            </ul>
+        <div id="nav-sub" class="btn-group">
+            <button class="btn btn-small" onclick="javascript:window.open('?m=help&amp;dialog=1&amp;hid=', 'contexthelp', 'width=800, height=600, left=50, top=50, scrollbars=yes, resizable=yes')"><?php echo $AppUI->_('Help'); ?></button>
+            <button class="btn btn-small"><a href="./index.php?m=admin&amp;a=viewuser&amp;user_id=<?php echo $AppUI->user_id; ?>"><?php echo $AppUI->_('My Info'); ?></button>
+            <?php if (canAccess('tasks')) { ?>
+                <button class="btn btn-small"><a href="./index.php?m=tasks&amp;a=todo"><?php echo $AppUI->_('My Tasks'); ?></a></button>
+            <?php } ?>
+            <?php if (canAccess('calendar')) {
+                $now = new w2p_Utilities_Date(); ?>
+                <button class="btn btn-small"><a class="button" href="./index.php?m=calendar&amp;a=day_view&amp;date=<?php echo $now->format(FMT_TIMESTAMP_DATE); ?>"><?php echo $AppUI->_('Today'); ?></a></button>
+            <?php } ?>
+            <a href="./index.php?m=calendar&amp;a=day_view&amp;date=<?php echo $now->format(FMT_TIMESTAMP_DATE); ?>"><button class="btn btn-small"><?php echo $AppUI->_('Today'); ?></button></a>
+            <button class="btn btn-small"><a href="./index.php?logout=-1"><?php echo $AppUI->_('Logout'); ?></a></button>
         </div>
 
 <br /><br />

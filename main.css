@@ -32,19 +32,8 @@ select[name="m"] {
 
 #nav-sub {
     float: right;
-    margin-top: 60px;
-}
-
-#nav-sub ul {
-    display: inline;
-}
-
-#nav-sub ul li {
-    display: inline;
-}
-
-#nav-sub a {
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-top: 50px;
 }
 
 table {
@@ -85,8 +74,12 @@ select, textarea, input[type="text"], input[type="password"],
     input[type="search"], input[type="tel"], input[type="color"],
     .uneditable-input {
     font-size: 10px;
-    height: 15px;
+    height: 25px;
     width: 175px;
+}
+
+input[name="search_string"] {
+    height: 15px;
 }
 
 .crumb ul {
@@ -120,4 +113,78 @@ select, textarea, input[type="text"], input[type="password"],
 }
 .crumb ul li a:hover {
 	color: #FFFFFF;
+}
+
+
+.nav-tabs {
+    margin-bottom: 0px;
+}
+
+.view th, .list th {
+    background: #CCC;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* month calendar - title area */
+table.motitle {
+    background-color: #CCC;
+}
+table.motitle td {
+    background-color: #f0f0f0;
+}
+table.motitle th {
+    background-color: #f0f0f0;
+    font-size: 12pt;
+}
+
+table.mocal {
+    background-color: #777777;
+    cursor: pointer;
+}
+table.mocal th {
+    background-color: #CCC;
+    color: black;
+}
+table.mocal td {
+    border: 1px solid #E5E5E5;
+    vertical-align: top;
+}
+table.mocal td.week {
+    background-color: #CCC;
+    height: 80px;
+}
+table.mocal td.empty {
+    background-color: #e0e0e0;
+    color: #aaaaaa;
+    text-align: left;
+    height: 80px;
+}
+table.mocal td.day  {
+    background-color: #ffffff;
+    color: #333366;
+    text-align: left;
+    height: 80px;
+}
+table.mocal td.today {
+    background-color: #a5cbf7;
+    color: #ffffff;
+    text-align: left;
+}
+
+table.mocal td.weekend {
+    background-color: #f0f0f0;
+    text-align: left;
+}
+
+table.mocal td.event {
+    background-color: #ffff99;
+    text-align: left;
+}
+
+table.mocal .event {
+}
+
+.addedit input[type="text"] {
+    height: 15px;
 }
