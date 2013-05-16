@@ -8,8 +8,8 @@ if ($dialog) {
 
 // Include the file first of all, so that the AJAX methods are printed through xajax below
 require W2P_BASE_DIR . '/includes/ajax_functions.php';
-$theme = new bootstrap();
 
+$theme = new style_bootstrap($AppUI, $m);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -65,7 +65,7 @@ $theme = new bootstrap();
                     <a class="brand" href="./?m=public&a=welcome"><?php echo $w2Pconfig['company_name']; ?></a>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            <?php echo buildHeaderNavigation($AppUI, '', 'li', '', $m); ?>
+                            <?php echo $theme->buildHeaderNavigation('', 'li'); ?>
 <!-- TODO: Add search box -->
 <!-- TODO: Add 'new' dropdown box -->
 <!-- TODO: Hide admin modules? -->
@@ -90,15 +90,13 @@ $theme = new bootstrap();
 
         <div class="std shadow">&nbsp;</div>
         
-        <?php echo messageHandler($AppUI); ?>
+        <?php echo $theme->messageHandler(); ?>
 
         <table width="100%" cellspacing="0" cellpadding="4" border="0">
             <tr>
                 <td valign="top" align="left" width="98%">
                     <?php
                         $AppUI->boxTopRendered = false;
-                        if ($m == 'help' && function_exists('styleRenderBoxTop')) {
-                            echo styleRenderBoxTop();
-                        }
+                        $theme->styleRenderBoxTop();
 //TODO: Basically this entire file is exactly the same as the other two header.php files in core web2project.. - caseydk 2012-07-01
 //die();

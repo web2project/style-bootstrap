@@ -3,9 +3,54 @@ if (!defined('W2P_BASE_DIR')) {
 	die('You should not access this file directly.');
 }
 
-class bootstrap extends w2p_Theme_Base
+class style_bootstrap extends w2p_Theme_Base
 {
-    
+    public function styleRenderBoxTop() {
+        if ('help' == $m) {
+            return '';
+        }
+
+        $ret = '<table width="100%">';
+        $ret .= '<tr><td><ul class="nav nav-list"><li class="divider"></li></ul></td></tr>';
+        $ret .= '</table>';
+
+        return $ret;
+    }
+
+    public function styleRenderBoxBottom() {
+        $ret = '<table width="100%">';
+        $ret .= '<tr><td><ul class="nav nav-list"><li class="divider"></li></ul></td></tr>';
+        $ret .= '</table>';
+
+        return $ret;
+    }
+
+    public function messageHandler($reset = true) {
+        $msg = $this->_AppUI->msg;
+
+        $class = 'alert ';
+        switch ($this->_AppUI->msgNo) {
+            case UI_MSG_OK:
+            case UI_MSG_ALERT:
+                $class .= 'alert-success';
+                break;
+            case UI_MSG_WARNING:
+                $class .= 'alert-info';
+                break;
+            case UI_MSG_ERROR:
+                $class .= 'alert-error';
+                break;
+            default:
+
+        }
+
+        if ($reset) {
+            $this->_AppUI->msg = '';
+            $this->_AppUI->msgNo = 0;
+        }
+
+        return $msg ? '<div class="' . $class . '"><button type="button" class="close" data-dismiss="alert">&times;</button>' . $msg . '</div>' : '';
+    }
 }
 
 /**
@@ -83,45 +128,17 @@ class CTabBox extends w2p_Theme_TabBox {
 }
 
 function styleRenderBoxTop() {
-    $ret = '<table width="100%">';
-    $ret .= '<tr><td><ul class="nav nav-list"><li class="divider"></li></ul></td></tr>';
-    $ret .= '</table>';
+    trigger_error("The styleRenderBoxTop function has been deprecated and will be removed in v4.0.", E_USER_NOTICE );
 
-    return $ret;
+    global $AppUI;
+    $theme = new style_bootstrap($AppUI);
+    return $theme->styleRenderBoxTop();
 }
 
 function styleRenderBoxBottom() {
-    $ret = '<table width="100%">';
-    $ret .= '<tr><td><ul class="nav nav-list"><li class="divider"></li></ul></td></tr>';
-    $ret .= '</table>';
+    trigger_error("The styleRenderBoxBottom function has been deprecated and will be removed in v4.0.", E_USER_NOTICE );
 
-    return $ret;
-}
-
-function messageHandler($reset = true) {
     global $AppUI;
-    $msg = $AppUI->msg;
-
-    $class = 'alert ';
-    switch ($AppUI->msgNo) {
-        case UI_MSG_OK:
-        case UI_MSG_ALERT:
-            $class .= 'alert-success';
-            break;
-        case UI_MSG_WARNING:
-            $class .= 'alert-info';
-            break;
-        case UI_MSG_ERROR:
-            $class .= 'alert-error';
-            break;
-        default:
-            
-    }
-
-    if ($reset) {
-        $AppUI->msg = '';
-        $AppUI->msgNo = 0;
-    }
-
-    return $msg ? '<div class="' . $class . '"><button type="button" class="close" data-dismiss="alert">&times;</button>' . $msg . '</div>' : '';
+    $theme = new style_bootstrap($AppUI);
+    return $theme->styleRenderBoxBottom();
 }

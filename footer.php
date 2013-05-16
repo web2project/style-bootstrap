@@ -2,7 +2,6 @@
                     global $a, $AppUI;
 
                     $AppUI->loadFooterJS();
-                    echo $AppUI->getMsg();
                     ?>
                 </td>
             </tr>
