@@ -8,6 +8,8 @@ if ($dialog) {
 
 // Include the file first of all, so that the AJAX methods are printed through xajax below
 require W2P_BASE_DIR . '/includes/ajax_functions.php';
+$theme = new bootstrap();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
