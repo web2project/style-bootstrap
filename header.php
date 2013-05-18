@@ -99,4 +99,3 @@ $theme = new style_bootstrap($AppUI, $m);
                         $AppUI->boxTopRendered = false;
                         $theme->styleRenderBoxTop();
 //TODO: Basically this entire file is exactly the same as the other two header.php files in core web2project.. - caseydk 2012-07-01
-//die();
