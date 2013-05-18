@@ -1,13 +1,7 @@
-<?php /* $Id$ $URL$ */
-$dialog = w2PgetParam($_GET, 'dialog', 0);
-if ($dialog) {
-	$page_title = '';
-} else {
-	$page_title = ($w2Pconfig['page_title'] == 'web2Project') ? $w2Pconfig['page_title'] . '&nbsp;' . $AppUI->getVersion() : $w2Pconfig['page_title'];
+<?php
+if (!defined('W2P_BASE_DIR')) {
+    die('You should not access this file directly.');
 }
-
-// Include the file first of all, so that the AJAX methods are printed through xajax below
-require W2P_BASE_DIR . '/includes/ajax_functions.php';
 
 $theme = new style_bootstrap($AppUI, $m);
 ?>
