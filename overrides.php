@@ -5,8 +5,14 @@ if (!defined('W2P_BASE_DIR')) {
 
 class style_bootstrap extends w2p_Theme_Base
 {
+    public function __construct($AppUI, $m = '') {
+        $this->_uistyle = 'bootstrap';
+
+        parent::__construct($AppUI, $m);
+    }
+
     public function styleRenderBoxTop() {
-        if ('help' == $m) {
+        if ('help' == $this->_m) {
             return '';
         }
 
@@ -125,20 +131,4 @@ class CTabBox extends w2p_Theme_TabBox {
         }
         echo '</td></tr></table>';
 	}
-}
-
-function styleRenderBoxTop() {
-    trigger_error("The styleRenderBoxTop function has been deprecated and will be removed in v4.0.", E_USER_NOTICE );
-
-    global $AppUI;
-    $theme = new style_bootstrap($AppUI);
-    return $theme->styleRenderBoxTop();
-}
-
-function styleRenderBoxBottom() {
-    trigger_error("The styleRenderBoxBottom function has been deprecated and will be removed in v4.0.", E_USER_NOTICE );
-
-    global $AppUI;
-    $theme = new style_bootstrap($AppUI);
-    return $theme->styleRenderBoxBottom();
 }
