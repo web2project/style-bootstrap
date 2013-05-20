@@ -132,3 +132,15 @@ class CTabBox extends w2p_Theme_TabBox {
         echo '</td></tr></table>';
 	}
 }
+
+function styleRenderBoxTop() {
+    global $AppUI;
+    $theme = new style_bootstrap($AppUI);
+    return $theme->styleRenderBoxTop();
+}
+
+function styleRenderBoxBottom() {
+    global $AppUI;
+    $theme = new style_bootstrap($AppUI);
+    return $theme->styleRenderBoxBottom();
+}
