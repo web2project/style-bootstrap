@@ -1,6 +1,6 @@
 /* $Id$ $URL$ */
 body {
-/*    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .navbar-fixed-top {
@@ -120,7 +120,6 @@ input[name="search_string"] {
 }
 .crumb ul li {
 	margin: 2px 2px 2px;
-	font-family:arial,sans-serif;
 	color: #000000;
 	text-decoration: none;
 	display: inline; /* Remove this line arrange the buttons vertically */
@@ -225,4 +224,8 @@ table.mocal .event {
 
 .addedit input[type="text"] {
     height: 15px;
+}
+
+table.well {
+    margin-bottom: 0px;
 }
