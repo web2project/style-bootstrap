@@ -3,6 +3,9 @@ if (!defined('W2P_BASE_DIR')) {
     die('You should not access this file directly.');
 }
 
+// Include the file first of all, so that the AJAX methods are printed through xajax below
+require W2P_BASE_DIR . '/includes/ajax_functions.php';
+
 $theme = new style_bootstrap($AppUI, $m);
 ?>
 <!DOCTYPE html>
