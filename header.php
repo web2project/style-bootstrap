@@ -73,16 +73,16 @@ $theme = new style_bootstrap($AppUI, $m);
         </div>
 
         <div id="nav-sub" class="btn-group">
-            <a href="#" onclick="javascript:window.open('?m=help&amp;dialog=1&amp;hid=', 'contexthelp', 'width=800, height=600, left=50, top=50, scrollbars=yes, resizable=yes')"><button class="btn btn-small"><?php echo $AppUI->_('Help'); ?></button></a>
-            <a href="./index.php?m=admin&amp;a=viewuser&amp;user_id=<?php echo $AppUI->user_id; ?>"><button class="btn btn-small"><?php echo $AppUI->_('My Info'); ?></button></a>
+            <a href="#" onclick="javascript:window.open('?m=help&amp;dialog=1&amp;hid=', 'contexthelp', 'width=800, height=600, left=50, top=50, scrollbars=yes, resizable=yes')"><button class="btn btn-mini"><?php echo $AppUI->_('Help'); ?></button></a>
+            <a href="./index.php?m=admin&amp;a=viewuser&amp;user_id=<?php echo $AppUI->user_id; ?>"><button class="btn btn-mini"><?php echo $AppUI->_('My Info'); ?></button></a>
             <?php if (canAccess('tasks')) { ?>
-                <a href="./index.php?m=tasks&amp;a=todo"><button class="btn btn-small"><?php echo $AppUI->_('My Tasks'); ?></button></a>
+                <a href="./index.php?m=tasks&amp;a=todo"><button class="btn btn-mini"><?php echo $AppUI->_('My Tasks'); ?></button></a>
             <?php } ?>
             <?php if (canAccess('calendar')) {
                 $now = new w2p_Utilities_Date(); ?>
-                <a href="./index.php?m=calendar&amp;a=day_view&amp;date=<?php echo $now->format(FMT_TIMESTAMP_DATE); ?>"><button class="btn btn-small"><?php echo $AppUI->_('Today'); ?></button></a>
+                <a href="./index.php?m=calendar&amp;a=day_view&amp;date=<?php echo $now->format(FMT_TIMESTAMP_DATE); ?>"><button class="btn btn-mini"><?php echo $AppUI->_('Today'); ?></button></a>
             <?php } ?>
-            <a href="./index.php?logout=-1"><button class="btn btn-small"><?php echo $AppUI->_('Logout'); ?></button></a>
+            <a href="./index.php?logout=-1"><button class="btn btn-mini"><?php echo $AppUI->_('Logout'); ?></button></a>
         </div>
 
         <div class="std shadow">&nbsp;</div>
