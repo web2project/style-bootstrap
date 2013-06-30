@@ -43,10 +43,14 @@ body {
 .alert {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     padding-left: 40px;
     text-align: center;
     width: 300px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .alert { margin-top: -40px; }
 }
 
 input[id="keyword"] {
