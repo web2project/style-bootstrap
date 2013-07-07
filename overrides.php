@@ -23,7 +23,7 @@ class style_bootstrap extends w2p_Theme_Base
         return $ret;
     }
 
-    public function styleRenderBoxBottom() {
+    public function styleRenderBoxBottom($tab = 0) {
         $ret = '<table width="100%">';
         $ret .= '<tr><td><ul class="nav nav-list"><li class="divider"></li></ul></td></tr>';
         $ret .= '</table>';
