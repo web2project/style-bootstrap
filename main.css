@@ -19,6 +19,13 @@ body {
     margin-right: -5px;
 }
 
+.nav-tabs > li > a, .nav-pills > li > a {
+    line-height: 14px;
+    margin-right: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
 .module-title .icon, .module-title h1 {
     margin-left: 10px;
     margin-top: -15px;
@@ -234,7 +241,7 @@ table.well {
 }
 
 form[name="searchform"] input {
-    margin-right: 10px;
+    margin-right: 0px;
     width: 100px;
 }
 
