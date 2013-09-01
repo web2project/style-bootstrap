@@ -13,7 +13,7 @@
             </tr>
         </table>
     <hr />
-    <div class="center">
+    <div class="center footer">
         <?php
             echo implode('|' , $links);
         ?>

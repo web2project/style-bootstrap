@@ -283,3 +283,17 @@ select[name="task_type"] {
     font-size: x-small;
     margin: 20px;
 }
+
+select, input[type="text"], input[type="password"],
+input[type="datetime"], input[type="datetime-local"], input[type="date"],
+input[type="month"], input[type="time"], input[type="week"],
+input[type="number"], input[type="email"], input[type="url"],
+input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    height: 25px;
+    width: 80px;
+}
+
+label[for="email_assignees"], label[for="email_task_contacts"],
+label[for="email_project_contacts"], label[for="email_log_user"] {
+    text-align: left;
+}
