@@ -248,3 +248,13 @@ form[name="searchform"] input {
 .crumb-right select {
     width: 100px;
 }
+
+.contact-info {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 5px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
+}
