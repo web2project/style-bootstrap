@@ -110,8 +110,7 @@ select, textarea, input[type="text"], input[type="password"],
     input[type="search"], input[type="tel"], input[type="color"],
     .uneditable-input {
     font-size: 10px;
-    height: 25px;
-    width: 175px;
+    vertical-align: middle;
 }
 
 input[name="search_string"] {
@@ -232,4 +231,13 @@ table.mocal .event {
 
 table.well {
     margin-bottom: 0px;
+}
+
+form[name="searchform"] input {
+    margin-right: 10px;
+    width: 100px;
+}
+
+.crumb-right select {
+    width: 100px;
 }

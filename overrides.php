@@ -7,6 +7,7 @@ class style_bootstrap extends w2p_Theme_Base
 {
     public function __construct($AppUI, $m = '') {
         $this->_uistyle = 'bootstrap';
+        $this->_uiname  = 'web2project in Bootstrap';
 
         parent::__construct($AppUI, $m);
     }
@@ -56,6 +57,32 @@ class style_bootstrap extends w2p_Theme_Base
         }
 
         return $msg ? '<div class="' . $class . '"><button type="button" class="close" data-dismiss="alert">&times;</button>' . $msg . '</div>' : '';
+    }
+
+    public function buildHeaderNavigation($rootTag = '', $innerTag = '', $dividingToken = '') {
+        $s = '';
+
+        $nav = $this->_AppUI->getMenuModules();
+
+        $s .= ($rootTag != '') ? "<$rootTag id=\"headerNav\">" : '';
+        $links = array();
+        foreach ($nav as $module) {
+            if ($module['mod_directory'] == 'system' || $module['mod_directory'] == 'admin') {
+                continue;
+            }
+            if (canAccess($module['mod_directory'])) {
+                $link = ($innerTag != '') ? "<$innerTag>" : '';
+                $class = ($this->_m == $module['mod_directory']) ? ' class="module"' : '';
+                $link .= '<a href="?m=' . $module['mod_directory'] . '"'.$class.'>' .
+                    $this->_AppUI->_($module['mod_ui_name']) . '</a>';
+                $link .= ($innerTag != '') ? "</$innerTag>" : '';
+                $links[] = $link;
+            }
+        }
+        $s .= implode($dividingToken, $links);
+        $s .= ($rootTag != '') ? "</$rootTag>" : '';
+
+        return $s;
     }
 }
 
@@ -131,16 +158,4 @@ class CTabBox extends w2p_Theme_TabBox {
         }
         echo '</td></tr></table>';
 	}
-}
-
-function styleRenderBoxTop() {
-    global $AppUI;
-    $theme = new style_bootstrap($AppUI);
-    return $theme->styleRenderBoxTop();
-}
-
-function styleRenderBoxBottom() {
-    global $AppUI;
-    $theme = new style_bootstrap($AppUI);
-    return $theme->styleRenderBoxBottom();
 }
