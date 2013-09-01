@@ -241,7 +241,11 @@ table.well {
 }
 
 form[name="searchform"] input {
-    margin-right: 0px;
+     margin-right: 0px;
+     width: 100px;
+}
+
+select[name="task_type"] {
     width: 100px;
 }
 
@@ -257,4 +261,25 @@ form[name="searchform"] input {
     border: 1px solid rgb(227, 227, 227);
     border-radius: 4px 4px 4px 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
+}
+
+.addedit {
+    margin-top: 70px;
+}
+
+.smartsearch {
+    margin-top: 40px;
+}
+
+.smartsearch td {
+    vertical-align: middle;
+}
+
+.smartsearch input {
+    margin: 10px;
+}
+
+.footer a {
+    font-size: x-small;
+    margin: 20px;
 }

@@ -1,10 +1,23 @@
 <?php /* $Id$ $URL$ */
                     global $a, $AppUI;
 
+                    $links = array();
+                    if (canAccess('admin')) {
+                        $links[] = '<a href="./index.php?m=admin">' . $AppUI->_('User Management') . '</a>';
+                    }
+                    if (canAccess('system')) {
+                        $links[] = '<a href="./index.php?m=system">' . $AppUI->_('System Administration') . '</a>';
+                    }
                     ?>
                 </td>
             </tr>
         </table>
+    <hr />
+    <div class="center">
+        <?php
+            echo implode('|' , $links);
+        ?>
+    </div>
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
