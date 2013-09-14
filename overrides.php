@@ -108,7 +108,7 @@ class CTabBox extends w2p_Theme_TabBox {
             echo '<table border="0" cellpadding="2" cellspacing="0" width="100%"><tr>' . $extra . '</tr>' . '</table>';
         }
 
-//TODO: check count before drawing anything
+// @todo     check count before drawing anything
         $s .= '<table width="100%" border="0" cellpadding="0" cellspacing="0">';
 
         $s .= '<tr><td>';
