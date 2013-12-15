@@ -263,6 +263,10 @@ select[name="task_type"] {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
 }
 
+.std.shadow {
+    margin-top: 10px;
+}
+
 .addedit {
     margin-top: 70px;
 }
