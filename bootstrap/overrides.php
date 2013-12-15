@@ -67,7 +67,7 @@ class style_bootstrap extends w2p_Theme_Base
         $s .= ($rootTag != '') ? "<$rootTag id=\"headerNav\">" : '';
         $links = array();
         foreach ($nav as $module) {
-            if ($module['mod_directory'] == 'system' || $module['mod_directory'] == 'admin') {
+            if ($module['mod_directory'] == 'system' || $module['mod_directory'] == 'users') {
                 continue;
             }
             if (canAccess($module['mod_directory'])) {

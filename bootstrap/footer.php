@@ -2,8 +2,8 @@
                     global $a, $AppUI;
 
                     $links = array();
-                    if (canAccess('admin')) {
-                        $links[] = '<a href="./index.php?m=admin">' . $AppUI->_('User Management') . '</a>';
+                    if (canAccess('users')) {
+                        $links[] = '<a href="./index.php?m=users">' . $AppUI->_('User Management') . '</a>';
                     }
                     if (canAccess('system')) {
                         $links[] = '<a href="./index.php?m=system">' . $AppUI->_('System Administration') . '</a>';
