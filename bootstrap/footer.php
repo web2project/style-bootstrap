@@ -3,7 +3,7 @@
 
                     $links = array();
                     if (canAccess('users')) {
-                        $links[] = '<a href="./index.php?m=users">' . $AppUI->_('User Management') . '</a>';
+                        $links[] = '<a href="./index.php?m=admin">' . $AppUI->_('User Management') . '</a>';
                     }
                     if (canAccess('system')) {
                         $links[] = '<a href="./index.php?m=system">' . $AppUI->_('System Administration') . '</a>';
