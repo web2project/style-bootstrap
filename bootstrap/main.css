@@ -336,6 +336,9 @@ table.well table tr td:first-child { width: 70%;}
     border-collapse: separate; 
 }
 
-tr, td, input, select {	font-size: 14px !important; }
+tr, td, input, select, label {	font-size: 14px !important; }
 table.well table tr td:first-child { width: 70%;}
 table.well tr td input, table.well tr td select { width: 60%; display: inline-block; box-sizing: border-box; }
+
+.btn-group .btn { margin-right: 5px;}
+label { display: inline-block; vertical-align: center; }
