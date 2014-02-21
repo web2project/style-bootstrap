@@ -342,3 +342,4 @@ table.well tr td input, table.well tr td select { width: 60%; display: inline-bl
 
 .btn-group .btn { margin-right: 5px;}
 label { display: inline-block; vertical-align: center; }
+table.list tr:hover td { font-style: none; }
