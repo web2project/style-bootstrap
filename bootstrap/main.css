@@ -301,3 +301,41 @@ label[for="email_assignees"], label[for="email_task_contacts"],
 label[for="email_project_contacts"], label[for="email_log_user"] {
     text-align: left;
 }
+
+
+/* -------------------- Customisations --------------------- */
+
+* { font-size: 14px; }
+a.brand { position: relative; left: 10px; }
+body > table { width: 95%; margin: 40px auto; }
+
+div.module-nav { margin-bottom: 15px;}
+
+.crumb ul li { background: none; }
+.crumb-right ul li span, .crumb-right ul li div, .crumb ul li span, .crumb ul li div {
+    background: rgb(0, 109, 204) none no-repeat;
+    line-height: 20px;
+    padding: 3px 10px;
+	font-size: 14px;
+}
+.crumb ul li a {
+	display: inline;
+    color: #fff;
+}
+.crumb ul li a:active {
+	color: #AD0000;
+}
+.crumb ul li div:hover {
+    opacity: 0.8;
+}
+
+table.well table tr td:first-child { width: 70%;}
+
+.view-column table, table.well { 
+    border-spacing: 0;
+    border-collapse: separate; 
+}
+
+tr, td, input, select {	font-size: 14px !important; }
+table.well table tr td:first-child { width: 70%;}
+table.well tr td input, table.well tr td select { width: 60%; display: inline-block; box-sizing: border-box; }
