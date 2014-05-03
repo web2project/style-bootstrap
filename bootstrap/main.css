@@ -237,6 +237,11 @@ table.mocal .event {
     width: 15em;
 }
 
+.addedit select {
+    height: 1.5em;
+    width: 16em;
+}
+
 table.well {
     margin-bottom: 0px;
 }
@@ -315,9 +320,10 @@ div.module-nav { margin-bottom: 15px;}
 .crumb ul li { background: none; }
 .crumb-right ul li span, .crumb-right ul li div, .crumb ul li span, .crumb ul li div {
     background: rgb(0, 109, 204) none no-repeat;
+    border-radius: 15px;
     line-height: 20px;
     padding: 3px 10px;
-	font-size: 14px;
+	font-size: 12px;
 }
 .crumb ul li a {
 	display: inline;
