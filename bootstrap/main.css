@@ -57,7 +57,7 @@ body {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-    .alert { margin-top: -40px; }
+    .alert { margin-top: -20px; }
 }
 
 input[id="keyword"] {
@@ -268,7 +268,7 @@ select[name="task_type"] {
 }
 
 .addedit {
-    margin-top: 70px;
+    margin-top: 0px;
 }
 
 .smartsearch {
@@ -307,7 +307,7 @@ label[for="email_project_contacts"], label[for="email_log_user"] {
 
 * { font-size: 14px; }
 a.brand { position: relative; left: 10px; }
-body > table { width: 95%; margin: 40px auto; }
+body > table { width: 95%; margin: 0px auto; }
 
 div.module-nav { margin-bottom: 15px;}
 
