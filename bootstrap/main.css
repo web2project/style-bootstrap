@@ -233,7 +233,8 @@ table.mocal .event {
 }
 
 .addedit input[type="text"] {
-    height: 15px;
+    height: 1em;
+    width: 15em;
 }
 
 table.well {
