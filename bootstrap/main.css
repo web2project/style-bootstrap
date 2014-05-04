@@ -158,7 +158,7 @@ input[name="search_string"] {
 }
 
 .nav-tabs {
-    margin-bottom: 0px;
+    margin-bottom: 20px;
 }
 
 .view th, .list th {
@@ -245,6 +245,18 @@ table.mocal .event {
 .addedit select {
     height: 1.5em;
     width: 16em;
+}
+.tasks-dates select {
+    width: 4em;
+}
+.tasks-dates input[type="text"] {
+    width: 2em;
+}
+select[multiple="multiple"] {
+    height: 10em;
+}
+.addedit .tasks select {
+    width: 10em;
 }
 
 .list select {
