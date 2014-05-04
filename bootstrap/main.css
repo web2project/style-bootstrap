@@ -258,6 +258,9 @@ select[multiple="multiple"] {
 .addedit .tasks select {
     width: 10em;
 }
+.addedit .preference select[class="text"] {
+    width: 40em;
+}
 
 .list select {
     height: 1.5em;
@@ -375,7 +378,7 @@ table.well table tr td:first-child { width: 70%;}
 
 tr, td, input, select, label {	font-size: 12px !important; }
 table.well table tr td:first-child { width: 70%;}
-table.well tr td input, table.well tr td select { width: 60%; display: inline-block; box-sizing: border-box; }
+table.well tr td input, table.well tr td select { width: 25%; display: inline-block; box-sizing: border-box; }
 
 .btn-group .btn { margin-right: 5px;}
 label { display: inline-block; vertical-align: center; }
