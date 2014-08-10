@@ -34,4 +34,4 @@
     <script src="./style/<?php echo $uistyle; ?>/assets/js/bootstrap-collapse.js"></script>
     <script src="./style/<?php echo $uistyle; ?>/assets/js/bootstrap-carousel.js"></script>
     <script src="./style/<?php echo $uistyle; ?>/assets/js/bootstrap-typeahead.js"></script>
-    <?php $AppUI->loadFooterJS(); ?>
+    <?php echo $AppUI->getTheme()->loadFooterJS(); ?>

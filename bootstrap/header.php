@@ -46,7 +46,7 @@ $theme = new style_bootstrap($AppUI, $m);
                 $xajax->printJavascript(w2PgetConfig('base_url') . '/lib/xajax');
             }
         ?>
-        <?php $AppUI->loadHeaderJS(); ?>
+        <?php echo $AppUI->getTheme()->loadHeaderJS(); ?>
     </head>
 
     <body onload="this.focus();">
