@@ -158,7 +158,7 @@ input[name="search_string"] {
 }
 
 .nav-tabs {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .view th, .list th {
@@ -348,7 +348,7 @@ label[for="email_project_contacts"], label[for="email_log_user"] {
 a.brand { position: relative; left: 10px; }
 body > table { width: 95%; margin: 0px auto; }
 
-div.module-nav { margin-bottom: 0px;}
+div.module-nav { margin-bottom: 20px;}
 
 .crumb ul li { background: none; }
 .crumb-right ul li span, .crumb-right ul li div, .crumb ul li span, .crumb ul li div {

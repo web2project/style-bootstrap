@@ -59,7 +59,6 @@ $theme = new style_bootstrap($AppUI, $m);
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="./?m=public&a=welcome"><?php echo $w2Pconfig['company_name']; ?></a>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <?php echo $theme->buildHeaderNavigation('', 'li'); ?>
