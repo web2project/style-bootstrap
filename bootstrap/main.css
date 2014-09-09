@@ -300,6 +300,7 @@ select[name="task_type"] {
     border: 1px solid rgb(227, 227, 227);
     border-radius: 4px 4px 4px 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
+    width: 100%;
 }
 
 .std.shadow {
