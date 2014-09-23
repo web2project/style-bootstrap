@@ -13,20 +13,23 @@ Here are the specific ids:
 |Icon Name|Noun Project ID| License |
 |---|----|---------------|---|
 | Companies | http://thenounproject.com/term/company/6324/ | Public Domain |
-| Contacts | 8289 |
-| Departments | 15061 |
-| Events | 9826 |
-| Files | 4299 |
-| Forums | 2471 |
-| Links | 18141 |
-| Money | 2474 |
-| Project Designer | 1050 |
-| Projects | 6299 |
-| Reports | 17390 |
-| SmartSearch | 19374 |
-| System | 1329, 2228, 2474, 4684, 8656 |
-| Tasks | 19375 |
-| Users | 14261 |
+| Contacts | http://thenounproject.com/term/contacts/8289/ |
+| Departments | http://thenounproject.com/term/departments/15061/ |
+| Events | http://thenounproject.com/term/events/9826/ |
+| Files | http://thenounproject.com/term/files/4299/ |
+| Forums | http://thenounproject.com/term/forums/2471/ |
+| Links | http://thenounproject.com/term/links/18141/ |
+| Money | http://thenounproject.com/term/money/2474/ |
+| Project Designer | http://thenounproject.com/term/project/1050/ | Public Domain |
+| Projects | http://thenounproject.com/term/project/6299/ | Public Domain |
+| Reports | http://thenounproject.com/term/reports/17390/ | Public Domain |
+| SmartSearch | http://thenounproject.com/term/search/19374/ | Public Domain |
+| System | http://thenounproject.com/term/gear/1329/ | Public Domain |
+| System | http://thenounproject.com/term/globe/2228/ | Public Domain |
+| System | http://thenounproject.com/term/tools/4684/ | Public Domain |
+| System | http://thenounproject.com/term/puzzle/8656/ | Public Domain |
+| Tasks | http://thenounproject.com/term/tasks/19375/ | Public Domain |
+| Users | http://thenounproject.com/term/people/14261/ | Public Domain |
 
 ## Contributing
 
