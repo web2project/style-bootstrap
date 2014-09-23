@@ -8,8 +8,6 @@ To install this theme:
 
 While all the included icons are in the public domain and do not need attribution, you should know they come from the frickin' awesome Noun Project - http://thenounproject.com/
 
-Here are the specific ids:
-
 |Icon Name|Noun Project ID| License |
 |---|----|---------------|---|
 | Companies | http://thenounproject.com/term/company/6324/ | Public Domain |
