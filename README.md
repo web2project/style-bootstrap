@@ -10,9 +10,9 @@ While all the included icons are in the public domain and do not need attributio
 
 Here are the specific ids:
 
-|Icon Name|Noun Project ID|
-|---|----|---------------|
-| Companies | 6324 |
+|Icon Name|Noun Project ID| License |
+|---|----|---------------|---|
+| Companies | http://thenounproject.com/term/company/6324/ | Public Domain |
 | Contacts | 8289 |
 | Departments | 15061 |
 | Events | 9826 |
