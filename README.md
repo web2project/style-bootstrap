@@ -13,13 +13,13 @@ Here are the specific ids:
 |Icon Name|Noun Project ID| License |
 |---|----|---------------|---|
 | Companies | http://thenounproject.com/term/company/6324/ | Public Domain |
-| Contacts | http://thenounproject.com/term/contacts/8289/ |
-| Departments | http://thenounproject.com/term/departments/15061/ |
-| Events | http://thenounproject.com/term/events/9826/ |
-| Files | http://thenounproject.com/term/files/4299/ |
-| Forums | http://thenounproject.com/term/forums/2471/ |
-| Links | http://thenounproject.com/term/links/18141/ |
-| Money | http://thenounproject.com/term/money/2474/ |
+| Contacts | http://thenounproject.com/term/contacts/8289/ | Public Domain |
+| Departments | http://thenounproject.com/term/departments/15061/ | Public Domain |
+| Events | http://thenounproject.com/term/events/9826/ | Public Domain |
+| Files | http://thenounproject.com/term/files/4299/ | Public Domain |
+| Forums | http://thenounproject.com/term/forums/2471/ | Public Domain |
+| Links | http://thenounproject.com/term/links/18141/ | Public Domain |
+| Money | http://thenounproject.com/term/money/2474/ | Public Domain |
 | Project Designer | http://thenounproject.com/term/project/1050/ | Public Domain |
 | Projects | http://thenounproject.com/term/project/6299/ | Public Domain |
 | Reports | http://thenounproject.com/term/reports/17390/ | Public Domain |
