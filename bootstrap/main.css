@@ -239,7 +239,7 @@ table.mocal .event {
 }
 .addedit input[type="text"] {
     height: 1em;
-    width: 15em;
+    width: 10em;
 }
 
 .addedit select {
