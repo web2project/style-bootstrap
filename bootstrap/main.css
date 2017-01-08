@@ -20,7 +20,6 @@ body {
 }
 
 .nav-tabs > li > a, .nav-pills > li > a {
-    font-size: 10pt;
     line-height: 14px;
     margin-right: 2px;
     padding-left: 6px;
@@ -58,7 +57,7 @@ body {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-    .alert { margin-top: -20px; }
+    .alert { margin-top: -40px; }
 }
 
 input[id="keyword"] {
@@ -233,42 +232,8 @@ table.mocal td.event {
 table.mocal .event {
 }
 
-.projectdesigner select {
-    height: 1.5em;
-    width: 25em;
-}
 .addedit input[type="text"] {
-    height: 1em;
-    width: 10em;
-}
-
-.addedit select {
-    height: 1.5em;
-    width: 16em;
-}
-.tasks-dates select {
-    width: 4em;
-}
-.tasks-dates input[type="text"] {
-    width: 2em;
-}
-select[multiple="multiple"] {
-    height: 10em;
-}
-.addedit .tasks select {
-    width: 10em;
-}
-.addedit .preference select[class="text"] {
-    width: 40em;
-}
-
-.list select {
-    height: 1.5em;
-    width: 10em;
-}
-
-input[type="submit"].btn.btn-small {
-    border-radius: 15px;
+    height: 15px;
 }
 
 table.well {
@@ -288,10 +253,6 @@ select[name="task_type"] {
     width: 100px;
 }
 
-.crumb-right li select, .crumb-right li input {
-    width: 10em;
-}
-
 .contact-info {
     min-height: 20px;
     padding: 19px;
@@ -300,7 +261,6 @@ select[name="task_type"] {
     border: 1px solid rgb(227, 227, 227);
     border-radius: 4px 4px 4px 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
-    width: 100%;
 }
 
 .std.shadow {
@@ -334,7 +294,6 @@ input[type="month"], input[type="time"], input[type="week"],
 input[type="number"], input[type="email"], input[type="url"],
 input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
     height: 25px;
-    width: 80px;
 }
 
 label[for="email_assignees"], label[for="email_task_contacts"],
@@ -345,19 +304,18 @@ label[for="email_project_contacts"], label[for="email_log_user"] {
 
 /* -------------------- Customisations --------------------- */
 
-* { font-size: 13px; }
+* { font-size: 14px; }
 a.brand { position: relative; left: 10px; }
-body > table { width: 95%; margin: 0px auto; }
+body > table { width: 95%; margin: 40px auto; }
 
-div.module-nav { margin-bottom: 20px;}
+div.module-nav { margin-bottom: 15px;}
 
 .crumb ul li { background: none; }
 .crumb-right ul li span, .crumb-right ul li div, .crumb ul li span, .crumb ul li div {
     background: rgb(0, 109, 204) none no-repeat;
-    border-radius: 15px;
     line-height: 20px;
     padding: 3px 10px;
-	font-size: 12px;
+	font-size: 14px;
 }
 .crumb ul li a {
 	display: inline;
@@ -377,9 +335,9 @@ table.well table tr td:first-child { width: 70%;}
     border-collapse: separate; 
 }
 
-tr, td, input, select, label {	font-size: 12px !important; }
+tr, td, input, select, label {	font-size: 14px !important; }
 table.well table tr td:first-child { width: 70%;}
-table.well tr td input, table.well tr td select { width: 25%; display: inline-block; box-sizing: border-box; }
+table.well tr td input, table.well tr td select { width: 60%; display: inline-block; box-sizing: border-box; }
 
 .btn-group .btn { margin-right: 5px;}
 label { display: inline-block; vertical-align: center; }

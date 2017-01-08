@@ -17,11 +17,19 @@ class style_bootstrap extends w2p_Theme_Base
             return '';
         }
 
-        return '';
+        $ret = '<table width="100%">';
+        $ret .= '<tr><td><ul class="nav nav-list"><li class="divider"></li></ul></td></tr>';
+        $ret .= '</table>';
+
+        return $ret;
     }
 
     public function styleRenderBoxBottom($tab = 0) {
-        return '';
+        $ret = '<table width="100%">';
+        $ret .= '<tr><td><ul class="nav nav-list"><li class="divider"></li></ul></td></tr>';
+        $ret .= '</table>';
+
+        return $ret;
     }
 
     public function messageHandler($reset = true) {
@@ -90,9 +98,7 @@ class CTabBox extends w2p_Theme_TabBox {
 			$uistyle = 'web2project';
 		}
 
-		if (($a == 'addedit' || $a == 'view' || $a == 'viewuser') && function_exists('styleRenderBoxBottom')) {
-			echo styleRenderBoxBottom();
-		}
+        echo $this->_AppUI->getTheme()->styleRenderBoxBottom();
 
 		reset($this->tabs);
 		$s = '';
